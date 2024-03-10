@@ -1,4 +1,25 @@
 {
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "C/C++: gcc.exe build active file",
+            "type": "shell",
+            "command": "C:\\MinGW\\bin\\gcc.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "C:\\MinGW\\bin"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ],
     "configurations": [
         {
             "name": "C/C++: gcc.exe build and debug active file",
@@ -7,7 +28,7 @@
             "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "C:\\MinGW\\bin",
+            "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
@@ -22,10 +43,15 @@
                     "description": "Set Disassembly Flavor to Intel",
                     "text": "-gdb-set disassembly-flavor intel",
                     "ignoreFailures": true
+                },
+                
+                {
+                    "description": "Enable pagination",
+                    "text": "-gdb-set pagination on",
+                    "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "C/C++: gcc.exe build active file"  // Corrected task name
+            "preLaunchTask": "C/C++: gcc.exe build active file"
         }
-    ],
-    "version": "2.0.0"
+    ]
 }
