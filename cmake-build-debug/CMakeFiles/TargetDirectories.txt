@@ -1,0 +1,3 @@
+/home/jp/Documentos/GitHub/EstruturaDeDadosIFAM1/cmake-build-debug/CMakeFiles/EstruturaDeDadosIFAM1.dir
+/home/jp/Documentos/GitHub/EstruturaDeDadosIFAM1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/jp/Documentos/GitHub/EstruturaDeDadosIFAM1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
